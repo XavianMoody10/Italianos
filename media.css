@@ -1,0 +1,87 @@
+@media (max-width: 1136px) {
+  .menu-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 964px) {
+  #landing .content {
+    /* width: 90%; */
+  }
+
+  .menu-image {
+    display: none;
+  }
+
+  .menu-download {
+    padding: 10px;
+  }
+
+  .menu-download h2 {
+    font-size: 5rem;
+  }
+
+  .menu-download p {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 542px) {
+  #reservation p {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #landing i {
+    display: none;
+  }
+}
+
+@media (max-width: 482px) {
+  .navigation img {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 445px) {
+  #reservation form {
+    width: 90%;
+  }
+  .input-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-grid input {
+    width: 100%;
+  }
+
+  .navigation img {
+    height: 60px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 401px) {
+  #landing h1 {
+    font-size: 3rem;
+  }
+  #landing h2 {
+    font-size: 1.5rem;
+  }
+
+  #menu h2 {
+    font-size: 3rem;
+  }
+
+  #menu p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 331px) {
+  .navigation img {
+    height: 50px;
+  }
+}
