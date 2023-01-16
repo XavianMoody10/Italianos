@@ -22,10 +22,8 @@ function changeFixedHeaderBackground() {
   let scroll = window.scrollY;
 
   if (scroll === 0) {
-    console.log("TOP OF PAGE");
     fixedHeader.style.backgroundColor = "transparent";
   } else {
-    console.log(scroll);
     fixedHeader.style.backgroundColor = "black";
   }
 }
