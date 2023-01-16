@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./media.css" />
+    <script
+      src="https://kit.fontawesome.com/16b96c8656.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Italianos | Online</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#landing">
+          <img src="./logos/primary_logo.png" alt="logo" height="70" />
+        </a>
+        <a href="">Locations</a>
+        <a href="">Join Us</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+
+    <header id="responsive-header">
+      <i class="fa-solid fa-xmark"></i>
+
+      <nav>
+        <a href="#landing">
+          <img src="./logos/primary_logo.png" alt="logo" height="70" />
+        </a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="">Locations</a>
+        <a href="">Join Us</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+
+    <header id="fixed-header">
+      <img src="./logos/secondary_logo.png" alt="logo" height="50" />
+      <i class="fa-solid fa-bars"></i>
+    </header>
+
+    <main>
+      <!-- Landing Section-->
+      <section id="landing">
+        <div class="content">
+          <h1>WE BRING ITALY TO AMERICA</h1>
+          <h2>ITALY'S BEST DISHES AND CUISNES</h2>
+          <a href="#reservation">Book A Reservation</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <img src="./logos/primary_logo.png" alt="logo" height="50" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <div class="images">
+          <img
+            src="./images/about_image_1.jpg"
+            alt="about_image_1"
+            height="500"
+          />
+          <img
+            src="./images/about_image_2.jpg"
+            alt="about_image_2"
+            height="500"
+          />
+          <img
+            src="./images/about_image_3.jpg"
+            alt="about_image_3"
+            height="500"
+          />
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu">
+        <div class="background">
+          <img src="./logos/secondary_logo.png" alt="menu_logo" height="100" />
+        </div>
+
+        <div class="content">
+          <h3>Menus</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque eu imperdiet urna. Praesent accumsan leo ut massa
+            malesuada, at vulputate felis tristique. Sed sagittis sagittis
+            libero, id porta ante sagittis.
+          </p>
+
+          <div class="download-btns">
+            <button>Dinner</button>
+            <button>Drinks</button>
+          </div>
+
+          <p>
+            <span>ITALIANOS KITCHEN:</span>
+            <span> MON - FRI 12PM - 14:30PM </span>
+            <span>5PM - 10PM SAT: 5PM - 10PM</span>
+            <span>SUNDAY: CLOSED</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Reservation -->
+      <section id="reservation">
+        <div class="background-banner">
+          <h2>Book A Reservation</h2>
+        </div>
+
+        <form method="POST" action="##">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email Address" />
+          <input type="number" min="1" max="20" placeholder="Number of guest" />
+          <input type="date" placeholder="Date" />
+          <select>
+            <option value="">Choose Location</option>
+            <option value="Location 1">Location 1</option>
+            <option value="Location 2">Loaction 2</option>
+            <option value="Location 3">Location 3</option>
+          </select>
+          <button>Book Reservation</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

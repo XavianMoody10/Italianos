@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Itim&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --inter-font: "Inter", sans-serif;
+  --itim-font: "Itim", cursive;
+}
+
+#main-header {
+  background-color: white;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#main-header nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#responsive-header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 20px;
+  transform: translateY(-100%);
+}
+
+.responsive-header-open {
+  animation-name: resposiveHeaderOpen;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.responsive-header-close {
+  animation-name: resposiveHeaderClose;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes resposiveHeaderOpen {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes resposiveHeaderClose {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#responsive-header i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+}
+
+#responsive-header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#main-header nav a,
+#responsive-header nav a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: var(--itim-font);
+  color: black;
+  font-size: 1.2rem;
+}
+
+#fixed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+#fixed-header i {
+  font-size: 2rem;
+  color: white;
+}
+
+section {
+  min-height: 100vh;
+}
+
+/* Landing */
+#landing {
+  background-image: url("./images/landing_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+#landing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.468);
+}
+
+#landing .content {
+  color: white;
+  z-index: 1;
+  font-family: var(--inter-font);
+  text-align: center;
+  margin-top: 100px;
+}
+
+#landing .content h1 {
+  font-size: 4rem;
+}
+#landing .content h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+#landing .content a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 20px;
+  color: black;
+}
+
+/* about */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px 0 20px 0;
+}
+
+#about img {
+  margin-bottom: 30px;
+}
+
+#about p {
+  width: 50%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-family: var(--inter-font);
+  margin-bottom: 40px;
+}
+
+#about .images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .images img {
+  width: 350px;
+}
+
+/* Menu */
+#menu {
+  display: flex;
+}
+
+#menu .background {
+  background-image: url("./images/pexels-marcus-herzberg-1058277.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu .background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.526);
+  width: 100%;
+  height: 100%;
+}
+
+#menu .background img {
+  position: relative;
+  z-index: 1;
+}
+
+#menu .content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 30px 0 30px;
+}
+
+#menu .content h3 {
+  font-size: 1.8rem;
+  font-family: var(--itim-font);
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+#menu .content p {
+  width: 100%;
+  font-family: var(--inter-font);
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+#menu .download-btns {
+  margin-bottom: 40px;
+}
+
+#menu .download-btns button {
+  padding: 10px 25px;
+  border: 2px solid black;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+#menu .content p:nth-of-type(2) {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+/* Reservation */
+#reservation {
+  padding: 20px 0;
+}
+
+#reservation .background-banner {
+  height: 400px;
+  background-image: url("./images/pexels-life-of-pix-67468\ \(1\).jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#reservation .background-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.526);
+  width: 100%;
+  height: 100%;
+}
+
+#reservation .background-banner h2 {
+  color: white;
+  z-index: 1;
+  position: relative;
+  font-family: var(--inter-font);
+  font-size: 3rem;
+}
+
+#reservation form {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 380px;
+  margin: auto;
+  gap: 25px 10px;
+  padding: 40px 20px;
+  font-family: var(--inter-font);
+}
+
+#reservation form input,
+#reservation form select {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.129);
+}
+
+#reservation form input {
+  padding: 10px 0 10px 5px;
+}
+
+#reservation form input:nth-of-type(1),
+#reservation form input:nth-of-type(4) {
+  grid-column: 1/3;
+}
+#reservation form input:nth-of-type(2),
+#reservation form input:nth-of-type(5) {
+  grid-column: 3/5;
+}
+#reservation form input:nth-of-type(3),
+#reservation form select,
+#reservation form button {
+  grid-column: 1/5;
+}
+
+#reservation form select {
+  padding: 10px;
+}
+
+#reservation form button {
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
