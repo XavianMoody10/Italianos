@@ -29,8 +29,11 @@
     display: none;
   }
 
+  #fixed-header {
+    display: flex;
+  }
+
   #about .images img {
-    /* width: 70%; */
     height: 400px;
     width: 250px;
   }
@@ -38,7 +41,6 @@
 
 @media (max-width: 785px) {
   #about .images {
-    /* display: flex; */
     flex-direction: column;
   }
 }
@@ -92,6 +94,14 @@
 @media (max-width: 372px) {
   #menu .background img {
     height: 50px;
+  }
+
+  #fixed-header img {
+    display: none;
+  }
+
+  #fixed-header i {
+    margin-left: auto;
   }
 }
 
